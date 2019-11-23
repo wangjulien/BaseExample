@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.centreon.map"
+    },
+    "jhipsterVersion": "6.5.1",
+    "applicationType": "monolith",
+    "baseName": "BaseExample",
+    "packageName": "com.centreon.map",
+    "packageFolder": "com/centreon/map",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZjQzOWRiMjlkYmUwYjc1YTAzMTgyYmY5NjMwZjE3ZTQ0OTYzYzBhMjAyMDNhNjFkZWVlMTBlMzI3ZjcyMmMwOGM0MjRjNjFmZDljZmU2ZDdlYzQ2MjgyMTFlZTljZjhkZDNiY2NhY2IyZDNkN2Y0YTUwYTQwNDIyOGQxZDY0MmM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "react",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": []
+  }
+}
