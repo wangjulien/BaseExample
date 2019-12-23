@@ -1,0 +1,35 @@
+{
+    "name": "Host",
+    "fields": [
+        {
+            "fieldName": "hostName",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Status",
+            "fieldValues": "UP,DOWN,UNKNOWN"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "service",
+            "otherEntityRelationshipName": "host",
+            "relationshipName": "service"
+        }
+    ],
+    "changelogDate": "20191123221150",
+    "entityTableName": "host",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceClass",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

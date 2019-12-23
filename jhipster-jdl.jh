@@ -1,0 +1,31 @@
+entity Host {
+	hostName String required,
+    status Status
+}
+
+entity Service {
+	serviceName String required,
+	status Status
+}
+
+enum Status {
+    UP, DOWN, UNKNOWN
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	Host{service} to Service,
+}
+
+// Set pagination options
+paginate Host with infinite-scroll
+paginate Service with pagination
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceClass
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
